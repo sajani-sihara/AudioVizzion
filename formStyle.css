@@ -1,0 +1,158 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "proxima", sans-serif;
+  line-height: 1.5;
+  font-size: 17px;
+  font-weight: 300;
+  background-image: url("images/bgImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headerImage {
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+@font-face {
+  font-family: "ForefarmersDEMO";
+  src: url("fonts/ForefarmersDEMO.ttf");
+}
+@font-face {
+  font-family: "proxima";
+  src: url("fonts/proxima.ttf");
+}
+@font-face {
+  font-family: "SummitBold-Display";
+  src: url("fonts/SummitBold-Display.ttf");
+}
+@font-face {
+  font-family: "Opificio";
+  src: url("fonts/Opificio-Serif-regular.ttf");
+}
+
+.mainHeading {
+  text-shadow: 3px 3px black;
+  font-size: 8rem;
+  letter-spacing: 0.07em;
+  position: absolute;
+  top: 18%;
+  left: 33%;
+  width: 100%;
+  font-family: "ForefarmersDEMO";
+  text-transform: lowercase;
+  color: maroon;
+}
+.subHeading {
+  top: 53%;
+  left: 29.5%;
+  font-family: "SummitBold-Display";
+  text-shadow: 2px 2px maroon;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+  font-weight: 1000;
+}
+.tabMenu {
+  overflow: hidden;
+  background-color: #da8e8e;
+}
+
+.tabMenu button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+.tabMenu button:hover {
+  background-color: rgb(216, 86, 86);
+}
+
+.tabMenu button.active {
+  background-color: maroon;
+  color: #f1f1f1;
+}
+
+.tabMenuinfo {
+  display: none;
+  max-width: 40%;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-left: 18%;
+}
+.menuLinks {
+  font-family: "SummitBold-Display";
+}
+form {
+  width: 70%;
+  background-color: cornsilk;
+}
+#submitButton {
+  background-color: maroon;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px maroon;
+  font-family: "proxima";
+  font-size: 16px;
+  font-weight: bold;
+}
+#submitButton:hover {
+  color: maroon;
+  background-color: whitesmoke;
+  border: 10px maroon;
+  font-size: 18px;
+  font-weight: bold;
+}
+.hearingGrid {
+  display: grid;
+  grid-template-columns: 400px 100px 600px;
+  grid-template-rows: auto;
+}
+.hearingIntro {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: justify;
+  background-color: rgb(214, 148, 148);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.hearingInnerIntro {
+  margin-top: 6%;
+  padding: 20px;
+  background-color: cornsilk;
+}
+.hearingForm {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.homeGrid {
+  display: grid;
+  grid-template-columns: 400px 100px 400px;
+  grid-template-rows: auto;
+  margin-right: 50%;
+}
+.homeIntro1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: justify;
+
+  width: 100%;
+}
+.homeIntro2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: justify;
+  width: 100%;
+}

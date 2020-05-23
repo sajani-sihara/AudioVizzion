@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="formStyle.css" type="text/css" />
+  </head>
+  <body>
+    <img class="headerImage" src="images/headerImage.jpg" alt="devices image" />
+
+    <h1 class="mainHeading">AudioVizzion</h1>
+    <h2 class="subHeading">Number 1 Hearing and Vision Aid</h2>
+
+    <div class="tabMenu">
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Lens')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Lens')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Lens')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Lens')"></button>
+      <button class="tablinks" onclick="openCity(event, 'Hearing')"></button>
+     
+      <button class="menuLinks active"  onclick="openDevice(event, 'Home')">
+        Home
+      </button>
+      <button class="menuLinks" onclick="openDevice(event, 'Hearing')">
+        Hearing Devices
+      </button>
+      <button class="menuLinks" onclick="openDevice(event, 'Lens')">
+        Vision Devices - Lens
+      </button>
+      <button class="menuLinks" onclick="openDevice(event, 'Frame')">
+        Vision Devices - Frame
+      </button>
+    </div>
+
+    <div id="Home" class="tabMenuinfo" style="display:block" >
+      <div class="homeGrid">
+      <div class="homeIntro1">
+        <h2 style="text-align: center;">What is AudioVizzion?</h2>
+        <p>
+          AudioVizzion provides a wide range of hearing devices. A hearing aid
+          is a battery-powered electronic device designed to improve your
+          hearing. Small enough to wear in or behind your ear, they make some
+          sounds louder. These hearing aids fit directly in your ear so it is
+          important that they have the right shape and size for ultimate comfort
+          and optimal sound quality. These hearing aids fit directly in your ear
+          so it is important that they have the right shape and size for
+          ultimate comfort. AudioVizzion has a wide variety of hearing aid
+          styles and features to treat hearing loss.Here you can add all the
+          hearing devices to our database.
+        </p>
+      </div>
+      <div class="homeIntro2">
+          <h2 style="text-align: center;">How can AudioVizzion help you?</h2>
+          <p>
+            AudioVizzion provides a wide range of hearing devices. A hearing aid
+            is a battery-powered electronic device designed to improve your
+            hearing. Small enough to wear in or behind your ear, they make some
+            sounds louder. These hearing aids fit directly in your ear so it is
+            important that they have the right shape and size for ultimate comfort
+            and optimal sound quality. These hearing aids fit directly in your ear
+            so it is important that they have the right shape and size for
+            ultimate comfort. AudioVizzion has a wide variety of hearing aid
+            styles and features to treat hearing loss.Here you can add all the
+            hearing devices to our database.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Hearing" class="tabMenuinfo">
+      <div class="hearingGrid">
+        <div class="hearingIntro">
+          <div class="hearingInnerIntro">
+            <h3 style="text-align: center;">Hearing Devices</h3>
+            <p>
+              AudioVizzion provides a wide range of hearing devices. A hearing
+              aid is a battery-powered electronic device designed to improve
+              your hearing. Small enough to wear in or behind your ear, they
+              make some sounds louder. These hearing aids fit directly in your
+              ear so it is important that they have the right shape and size for
+              ultimate comfort and optimal sound quality. These hearing aids fit
+              directly in your ear so it is important that they have the right
+              shape and size for ultimate comfort. AudioVizzion has a wide
+              variety of hearing aid styles and features to treat hearing
+              loss.Here you can add all the hearing devices to our database.
+            </p>
+          </div>
+        </div>
+        <form method="post" action="addToHearingDB.php" class="hearingForm">
+          <fieldset>
+            <legend>Add the hearing device here</legend>
+            Catalog ID:<br />
+            <input
+              type="number"
+              name="hearingCatalogID"
+              placeholder="Enter the ID"
+            />
+            <br /><br />
+            Catalog Name:<br />
+            <input
+              type="text"
+              name="hearingCatalogName"
+              placeholder="Enter the name"
+            />
+            <br /><br />
+            Device Description:<br />
+            <textarea rows="4" cols="21" name="hearingDescription">
+Enter the description</textarea
+            >
+            <br /><br />
+            Device Make:<br />
+            <input
+              type="text"
+              name="hearingMake"
+              placeholder="Enter the make"
+            />
+            <br /><br />
+            Device Model:<br />
+            <input
+              type="text"
+              name="hearingModel"
+              placeholder="Enter the model"
+            />
+            <br /><br />
+            Availability:<br />
+            <input
+              type="text"
+              name="hearingAvailability"
+              placeholder="Enter the availability status"
+            />
+            <br /><br />
+            <input id="submitButton" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div id="Lens" class="tabMenuinfo">
+      <div class="hearingGrid">
+        <div class="hearingIntro">
+          <div class="hearingInnerIntro">
+            <h3 style="text-align: center;">Vision Devices - Lens</h3>
+            <p>
+              AudioVizzion provides a wide range of vision devices. A hearing
+              aid is a battery-powered electronic device designed to improve
+              your hearing. Small enough to wear in or behind your ear, they
+              make some sounds louder. These hearing aids fit directly in your
+              ear so it is important that they have the right shape and size for
+              ultimate comfort and optimal sound quality. AudioVizzion has a
+              wide variety of vision aid styles and features to treat hearing
+              loss.Here you can add all the hearing devices to our database.
+              These hearing aids fit directly in your ear so it is important
+              that they have the right shape and size for ultimate comfort and
+              optimal sound quality. AudioVizzion has a wide variety of vision
+              aid styles and features to treat hearing loss.Here you can add all
+              the hearing devices to our database.Here you can add all the
+              hearing devices to our database.
+            </p>
+          </div>
+        </div>
+        <form method="post" action="addToLensDB.php" class="hearingForm">
+          <fieldset>
+            <legend>Add the details of the lens here</legend>
+            Catalog ID:<br />
+            <input
+              type="number"
+              name="lensCatalogID"
+              placeholder="Enter the ID"
+            />
+            <br /><br />
+            Catalog Name:<br />
+            <input
+              type="text"
+              name="lensCatalogName"
+              placeholder="Enter the name"
+            />
+            <br /><br />
+            Device Description:<br />
+            <textarea rows="4" cols="21" name="lensDescription">
+Enter the description</textarea
+            >
+            <br /><br />
+            Serial Number:<br />
+            <input
+              type="text"
+              name="lensSerialNum"
+              placeholder="Enter the serial number"
+            />
+            <br /><br />
+            Vision Type:<br />
+            <input
+              type="text"
+              name="lensVisionType"
+              placeholder="Enter the vision type"
+            />
+            <br /><br />
+            Lens Tint:<br />
+            <input
+              type="text"
+              name="lensTint"
+              placeholder="Enter the lens tint"
+            />
+            <br /><br />
+            Lens Thinness Level:<br />
+            <input
+              type="text"
+              name="lensThinness"
+              placeholder="Enter the lens thinness level"
+            />
+            <br /><br />
+            Availability:<br />
+            <input
+              type="text"
+              name="lensAvailability"
+              placeholder="Enter the availability status"
+            />
+            <br /><br />
+            <input id="submitButton" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <div id="Frame" class="tabMenuinfo">
+      <div class="hearingGrid">
+        <div class="hearingIntro">
+          <div class="hearingInnerIntro">
+            <h3 style="text-align: center;">Vision Devices - Frame</h3>
+            <p>
+              AudioVizzion provides a wide range of hearing devices. A hearing
+              aid is a battery-powered electronic device designed to improve
+              your hearing. Small enough to wear in or behind your ear, they
+              make some sounds louder. These hearing aids fit directly in your
+              ear so it is important that they have the right shape and size for
+              ultimate comfort and optimal sound quality. These hearing aids fit
+              directly in your ear so it is important that they have the right
+              shape and size for ultimate comfort. AudioVizzion has a wide
+              variety of hearing aid styles and features to treat hearing
+              loss.Here you can add all the hearing devices to our database.
+            </p>
+          </div>
+        </div>
+        <form method="post" action="addToFrameDB.php" class="hearingForm">
+          <fieldset>
+            <legend>Add the details of the frame here</legend>
+            Catalog ID:<br />
+            <input
+              type="number"
+              name="frameCatalogID"
+              placeholder="Enter the ID"
+            />
+            <br /><br />
+            Catalog Name:<br />
+            <input
+              type="text"
+              name="frameCatalogName"
+              placeholder="Enter the name"
+            />
+            <br /><br />
+            Device Description:<br />
+            <textarea rows="4" cols="21" name="frameDescription">
+Enter the description</textarea
+            >
+            <br /><br />
+            Device Brand:<br />
+            <input
+              type="text"
+              name="frameBrand"
+              placeholder="Enter the brand"
+            />
+            <br /><br />
+            Device Model:<br />
+            <input
+              type="text"
+              name="frameModel"
+              placeholder="Enter the model"
+            />
+            <br /><br />
+            Availability:<br />
+            <input
+              type="text"
+              name="frameAvailability"
+              placeholder="Enter the availability status"
+            />
+            <br /><br />
+            <input id="submitButton" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openDevice(event, deviceName) {
+        var i, tabMenuinfo, menuLinks;
+        tabMenuinfo = document.getElementsByClassName("tabMenuinfo");
+        for (i = 0; i < tabMenuinfo.length; i++) {
+          tabMenuinfo[i].style.display = "none";
+        }
+        menuLinks = document.getElementsByClassName("menuLinks");
+        for (i = 0; i < menuLinks.length; i++) {
+          menuLinks[i].className = menuLinks[i].className.replace(
+            " active",
+            ""
+          );
+        }
+        document.getElementById(deviceName).style.display = "block";
+        event.currentTarget.className += " active";
+      }
+    </script>
+  </body>
+</html>
